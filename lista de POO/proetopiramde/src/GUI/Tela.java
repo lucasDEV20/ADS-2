@@ -40,11 +40,16 @@ public class Tela extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 153, 0));
+        setFocusCycleRoot(false);
+        setType(java.awt.Window.Type.POPUP);
 
         Base.setText("base");
 
         Altura.setText("altura");
 
+        jTextField_base.setForeground(new java.awt.Color(204, 0, 0));
+        jTextField_base.setCaretColor(new java.awt.Color(255, 0, 0));
         jTextField_base.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_baseActionPerformed(evt);
@@ -60,10 +65,17 @@ public class Tela extends javax.swing.JFrame {
         saida.setText("SAIDA");
 
         jTextArea_saida.setColumns(20);
+        jTextArea_saida.setForeground(new java.awt.Color(255, 102, 51));
         jTextArea_saida.setRows(5);
+        jTextArea_saida.setCaretColor(new java.awt.Color(255, 51, 51));
+        jTextArea_saida.setDisabledTextColor(new java.awt.Color(255, 51, 51));
+        jTextArea_saida.setSelectedTextColor(new java.awt.Color(153, 0, 0));
+        jTextArea_saida.setSelectionColor(new java.awt.Color(204, 51, 0));
         jScrollPane1.setViewportView(jTextArea_saida);
 
-        jButton1.setText("BOTAO DO JHNATHAM");
+        jButton1.setBackground(new java.awt.Color(153, 0, 0));
+        jButton1.setForeground(new java.awt.Color(255, 0, 102));
+        jButton1.setText("Executar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -94,7 +106,7 @@ public class Tela extends javax.swing.JFrame {
                 .addComponent(saida)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(9, 9, 9))
+                .addGap(68, 68, 68))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
